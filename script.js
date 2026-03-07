@@ -1,37 +1,35 @@
-const typingAnimationElement = document.getElementById('typing-animation');
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('profile.json')
+    .then(res => res.json())
+    .then(data => {
+        // Education
+        const eduList = document.getElementById('education-list');
+        data.education.forEach(edu => {
+            let li = document.createElement('li');
+            li.innerHTML = `<strong>${edu.degree}</strong> - ${edu.institution} (${edu.year}) | CGPA: ${edu.cgpa}`;
+            eduList.appendChild(li);
+        });
 
-const words = ["Power BI Developer", "SQL Analyst", "Python Programmer", "Data Enthusiast"];
-let wordIndex = 0;
-let charIndex = 0;
+        // Skills
+        const skillsContainer = document.getElementById('skills-container');
+        data.skills.forEach(skill=>{
+            let div = document.createElement('div');
+            div.className='skill';
+            div.innerHTML=`<h4>${skill.name}</h4>
+            <div class="progress-bar" style="width:${skill.level}%; background-color:#FFD700; padding:5px 0; border-radius:5px; color:black;">${skill.level}%</div>`;
+            skillsContainer.appendChild(div);
+        });
 
-function type() {
-  if (charIndex < words[wordIndex].length) {
-    typingAnimationElement.textContent += words[wordIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, 150);
-  } else {
-    setTimeout(erase, 1000);
-  }
-}
-
-function erase() {
-  if (charIndex > 0) {
-    typingAnimationElement.textContent = words[wordIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 70);
-  } else {
-    wordIndex = (wordIndex + 1) % words.length;
-    setTimeout(type, 500);
-  }
-}
-
-type();
-
-// Navbar active link color update
-const navLinks = document.querySelectorAll('.navbar ul li a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.forEach(l => l.classList.remove('active'));
-    link.classList.add('active');
-  });
+        // Projects
+        const projectsContainer = document.getElementById('projects-container');
+        data.projects.forEach(proj => {
+            let div = document.createElement('div');
+            div.className='blog-entry';
+            div.innerHTML=`
+            <a href="${proj.link}" class="block-20" style="background-image:url('${proj.image}');"></a>
+            <div class="text"><h3>${proj.title}</h3><p>${proj.desc}</p></div>`;
+            projectsContainer.appendChild(div);
+        });
+    })
+    .catch(err => console.error(err));
 });
