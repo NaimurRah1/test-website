@@ -1,71 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Naimur Rahman Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naimur Rahman Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-<div class="code-bg" id="codeBg"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#courses">Courses</a>
-  <a href="#projects">Projects</a>
-  <button id="themeToggle">🌙</button>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Naimur Rahman</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" 
+            data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-card">
-    <img id="photo" src="" alt="Profile Photo">
-    <h1 id="name"></h1>
-    <p id="bio"></p>
-    <div class="social-icons" id="socials"></div>
-  </div>
+<!-- Hero Section -->
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end">
+                    <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile.jpg);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate">
+                        <div class="text">
+                            <span class="subheading">Hello!</span>
+                            <h1 class="mb-4 mt-3">I'm <span>Naimur Rahman</span></h1>
+
+                            <!-- Typing Animation -->
+                            <span id="typing-container">
+                                <span id="typing-animation"></span>
+                                <span class="cursor"></span>
+                            </span>
+
+                            <script>
+                                const typingEl = document.getElementById('typing-animation');
+                                const texts = ['Data Analyst','Python Developer','Power BI Specialist','SQL Developer','Statistics Researcher'];
+                                let tIndex = 0, cIndex = 0;
+                                function type(){
+                                    if(cIndex < texts[tIndex].length){
+                                        typingEl.textContent += texts[tIndex][cIndex];
+                                        cIndex++;
+                                        setTimeout(type,140);
+                                    } else { setTimeout(erase,1200);}
+                                }
+                                function erase(){
+                                    if(cIndex >0){
+                                        typingEl.textContent = typingEl.textContent.slice(0,-1);
+                                        cIndex--;
+                                        setTimeout(erase,70);
+                                    } else { tIndex=(tIndex+1)%texts.length; setTimeout(type,500);}
+                                }
+                                type();
+                            </script>
+
+                            <p>I’m a statistics graduate and data enthusiast. Skilled in Python, SQL, Power BI, Excel, and data visualization. I convert complex datasets into actionable insights and reports.</p>
+                            <p><a href="https://github.com/naimurrah1" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My GitHub</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- SKILLS -->
-<section class="section" id="skills">
-  <h2>Skills</h2>
-  <div id="skillsList"></div>
+<!-- About Section -->
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+        <div class="col-md-12 heading-section ftco-animate text-center">
+            <h1 class="big">About</h1>
+            <h2 class="mb-4">About Me</h2>
+            <p>I’m a Statistics graduate with research experience using BDHS datasets, analyzing child nutrition, immunization, and socioeconomic trends. Skilled in Python, SQL, Power BI, and Excel to deliver actionable insights. Passionate about data storytelling and mentoring others in analytics.</p>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <ul class="about-info">
+                <li><strong>Education:</strong> BSc & MSc in Statistics, Jagannath University</li>
+                <li><strong>Domain:</strong> Public Health, Data Analytics, Business Intelligence</li>
+                <li><strong>Skills:</strong> Python, R, SQL, Excel, Power BI, Data Visualization</li>
+                <li><strong>Research:</strong> Child nutrition, immunization, cohort analysis, data modeling</li>
+                <li><strong>Languages:</strong> English, Bengali</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="section" id="education">
-  <h2>Education</h2>
-  <div id="educationList"></div>
+<!-- Resume Section -->
+<section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Resume</h1>
+                <h2 class="mb-4">Resume</h2>
+                <p>Aspiring Data Analyst with hands-on experience in BDHS-based research, cohort analysis, SQL projects, Power BI dashboards, and Python analytics. Skilled at turning raw datasets into actionable insights.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="big-4">Experience</h1>
+            <div class="underline"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2025 – Present</span>
+                    <h2>Research Assistant | BDHS Projects</h2>
+                    <span class="position">Data Analyst</span>
+                    <p>Conducted data analysis on child stunting, wasting, underweight, and immunization trends using BDHS data. Applied statistical models, cohort analysis, and visualization techniques to support public health insights.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2025 – Present</span>
+                    <h2>Freelance Data Analyst</h2>
+                    <span class="position">Python & Power BI Developer</span>
+                    <p>Built dashboards, automated reports, and conducted SQL-based analysis for clients. Mentored students on Power BI and Excel analytics projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- COURSES -->
-<section class="section" id="courses">
-  <h2>Courses</h2>
-  <div id="courseList"></div>
+<!-- Projects Section -->
+<section class="ftco-section" id="project-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Projects</h1>
+                <h2 class="mb-4">Projects</h2>
+                <p>Some of my key projects in SQL, Python, Power BI, and Excel analytics.</p>
+            </div>
+        </div>
+        <div class="row d-flex" id="projects-container">
+            <!-- Projects populated via script.js -->
+        </div>
+    </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="section" id="projects">
-  <h2>Projects</h2>
-  <div id="projectFilters">
-    <button data-cat="All">All</button>
-    <button data-cat="Research & Statistics">Research</button>
-    <button data-cat="SQL">SQL</button>
-    <button data-cat="Excel">Excel</button>
-    <button data-cat="Power BI">Power BI</button>
-  </div>
-  <div class="projects-grid" id="projectsGrid"></div>
+<!-- Contact Section -->
+<section class="ftco-section ftco-no-pb" id="contact-section">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>Email: b180304053@stat.jnu.ac.bd | Phone: 01310743379</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/naimurrahman33" target="_blank">https://www.linkedin.com/in/naimurrahman33</a></p>
+        <p>Portfolio: <a href="https://naimurrah1.github.io/Naimur-Rahman-Website/" target="_blank">My Website</a></p>
+    </div>
 </section>
 
-<!-- SECTION POPUP -->
-<div class="section-popup" id="sectionPopup"></div>
+<!-- JS Libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/script.js"></script>
 
-<script src="script.js"></script>
 </body>
 </html>
