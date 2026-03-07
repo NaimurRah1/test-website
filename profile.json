@@ -8,45 +8,35 @@
     "Portfolio": "https://naimurrah1.github.io/Naimur-Rahman-Website/"
   },
   "education": [
-    {
-      "degree": "MSc in Statistics",
-      "institution": "Jagannath University",
-      "year": "2025",
-      "cgpa": 3.76
-    },
-    {
-      "degree": "BSc in Statistics",
-      "institution": "Jagannath University",
-      "year": "2023",
-      "cgpa": 3.79
-    }
+    {"degree":"MSc in Statistics","institution":"Jagannath University","year":"2025","cgpa":3.76},
+    {"degree":"BSc in Statistics","institution":"Jagannath University","year":"2023","cgpa":3.79}
   ],
-  "skills": [
-    {"name": "Python", "level": 90},
-    {"name": "SQL", "level": 85},
-    {"name": "Power BI", "level": 80},
-    {"name": "Excel", "level": 95},
-    {"name": "R", "level": 80},
-    {"name": "Data Visualization", "level": 90}
+  "skills":[
+    {"name":"Python","level":90},
+    {"name":"SQL","level":85},
+    {"name":"Power BI","level":80},
+    {"name":"Excel","level":95},
+    {"name":"R","level":80},
+    {"name":"Data Visualization","level":90}
   ],
-  "projects": [
+  "projects":[
     {
-      "title": "Cohort Analysis - SQL Based",
-      "desc": "Performed cohort analysis to track customer retention over 5 months using Python & PostgreSQL.",
-      "image": "images/proj_1.jpg",
-      "link": "https://github.com/naimurrah1/Cohort-Analysis--SQL-based-business-analysis"
+      "title":"Cohort Analysis - SQL Based",
+      "desc":"Performed cohort analysis to track customer retention over 5 months using Python & PostgreSQL.",
+      "image":"images/proj_1.jpg",
+      "link":"https://github.com/naimurrah1/Cohort-Analysis--SQL-based-business-analysis"
     },
     {
-      "title": "BDHS Child Nutrition Study",
-      "desc": "Analyzed stunting, wasting, and underweight determinants using BDHS datasets.",
-      "image": "images/proj_2.jpg",
-      "link": "#"
+      "title":"BDHS Child Nutrition Study",
+      "desc":"Analyzed stunting, wasting, and underweight determinants using BDHS datasets.",
+      "image":"images/proj_2.jpg",
+      "link":"#"
     },
     {
-      "title": "Power BI Dashboard",
-      "desc": "Built interactive Power BI dashboard for business and research analytics.",
-      "image": "images/proj_3.jpg",
-      "link": "#"
+      "title":"Power BI Dashboard",
+      "desc":"Built interactive Power BI dashboard for business and research analytics.",
+      "image":"images/proj_3.jpg",
+      "link":"#"
     }
   ]
 }
