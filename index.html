@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naimur Rahman Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naimur Rahman Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navbar -->
-<nav>
+  <nav class="navbar">
     <ul>
-        <li><a href="#hero-section" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 
-<!-- Hero Section -->
-<section id="hero-section" class="hero">
-    <div class="text">
-        <h1>
-            <span class="yellow small">Hello!</span><br>
-            <span class="white">I am</span> <span class="yellow">Naimur</span><br>
-            <span class="yellow">Rahman</span>
-        </h1>
-        <div id="typing-container"></div>
-        <p class="subtext">
-            Data-driven problem solver with hands-on experience in Excel, Power BI, SQL, Metabase, SPSS, and R. Turning raw data into actionable insights, from dashboards to fraud detection.
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hello">Hello!</p>
+        <h1>I am <br><span class="name-highlight">Naimur Rahman</span></h1>
+
+        <div id="typing-container">
+          <span id="typing-animation"></span><span class="cursor"></span>
+        </div>
+
+        <p class="hero-description">
+          I turn raw data into actionable insights with hands-on experience in Excel, Power BI, SQL, Python, R, Metabase, and SPSS. 
+          From dashboards to predictive models, I make data work smarter.
         </p>
-        <a href="https://github.com/naimurrah1" class="btn-work" target="_blank">My Work</a>
+
+        <a href="https://github.com/naimurrah1" target="_blank" class="btn-work">My Work</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Naimur Rahman">
+      </div>
     </div>
-    <div class="img" style="background-image:url('images/profile.jpg');"></div>
-</section>
+  </section>
 
-<!-- About Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>Statistics graduate and data enthusiast. Skilled in Python, SQL, R, Power BI, Excel, and statistical modeling.</p>
-</section>
+  <section id="about">About Section Placeholder</section>
+  <section id="resume">Resume Section Placeholder</section>
+  <section id="projects">Projects Section Placeholder</section>
+  <section id="contact">Contact Section Placeholder</section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <p>BDHS-based research projects, cohort analysis, dashboards, and data analytics projects.</p>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: b180304053@stat.jnu.ac.bd</p>
-    <p>Phone: 01310743379</p>
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
