@@ -164,6 +164,19 @@ ul{list-style:none;}
     line-height:1.7;
 }
 /*about end*/
+/*project complesion*/
+.projects-counter{
+    text-align:center;
+    margin-top:40px;
+    font-size:24px;
+    font-weight:600;
+    color:#ccc; /* normal text color */
+}
+
+.projects-counter .count{
+    color: var(--accent-color); /* your yellow/redish accent */
+}
+/*project complesion*/
 #typing-container{font-weight:500;color:var(--accent-color);font-size:20px;display:inline;}
 .cursor{border-left:2px solid var(--accent-color);margin-left:2px;animation:blink 0.7s infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
@@ -233,6 +246,7 @@ color:#aaa;
     .about-info{grid-template-columns:1fr;}
     #projects-container{justify-content:center;}
 }
+
 
 
 
