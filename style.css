@@ -43,6 +43,7 @@ ul{list-style:none;}
 
 .navbar .nav-link.active{color:var(--accent-color);}
 
+/* -- hero*/
 .hero{
     height:100vh;
     display:flex;
@@ -158,6 +159,7 @@ color:#aaa;
     .about-info{grid-template-columns:1fr;}
     #projects-container{justify-content:center;}
 }
+
 
 
 
