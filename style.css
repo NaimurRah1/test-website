@@ -146,6 +146,24 @@ ul{list-style:none;}
     box-shadow:0 10px 20px rgba(255,215,0,0.3);
 }
 /* hero end*/
+
+/* about section*/
+#about-section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:40px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+#bio{
+    max-width:800px;
+    margin:0 auto;
+    line-height:1.7;
+}
+/*about end*/
 #typing-container{font-weight:500;color:var(--accent-color);font-size:20px;display:inline;}
 .cursor{border-left:2px solid var(--accent-color);margin-left:2px;animation:blink 0.7s infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
@@ -215,6 +233,7 @@ color:#aaa;
     .about-info{grid-template-columns:1fr;}
     #projects-container{justify-content:center;}
 }
+
 
 
 
