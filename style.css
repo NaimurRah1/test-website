@@ -209,48 +209,64 @@ ul{list-style:none;}
 .heading-section h2{font-size:36px;font-weight:600;color:var(--accent-color);}
 .about-info{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:30px;}
 .about-info li{font-weight:500;}
-#resume-section{padding:60px 20px;}
-.resume-wrap{background:#111;padding:25px;border-radius:10px;box-shadow:0 10px 25px rgba(255,255,0,0.1);margin-bottom:30px;}
-.resume-wrap h3{margin-bottom:20px;color:var(--accent-color);}
-/* Education Section */
-
-#education-section{
-padding:60px 20px;
+/* Resume Section */
+#resume-section{
+    padding:60px 20px;
+    max-width:1000px;
+    margin:0 auto;
 }
 
-/* 4 bars layout */
-.education-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-max-width:900px;
-margin:auto;
+/* Each block: Skills / Education */
+.resume-wrap{
+    background:#111;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(255,215,0,0.1);
+    margin-bottom:30px;
 }
 
-/* education card */
-.education-wrap{
-background:#111;
-padding:25px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(255,255,0,0.1);
-border-left:5px solid var(--accent-color);
+/* Heading inside block */
+.resume-wrap h3{
+    margin-bottom:20px;
+    color:var(--accent-color);
 }
 
-/* degree title */
-.education-wrap h3{
-color:var(--accent-color);
-margin-bottom:10px;
+/* Skills container (grid) */
+#skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+    gap:15px;
 }
 
-/* university name */
-.education-wrap p{
-color:#ddd;
-margin-bottom:5px;
+/* Each skill bar / badge */
+.skill-item{
+    background:rgba(255,255,255,0.05);
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+    color:#fff;
+    font-weight:500;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:all 0.3s ease;
 }
 
-/* cgpa */
-.education-wrap span{
-color:#aaa;
+.skill-item:hover{
+    background:var(--accent-color);
+    color:#000;
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(255,215,0,0.3);
+}
+
+/* Education list */
+#education-list{
+    list-style:none;
+    padding-left:0;
+}
+
+#education-list li{
+    font-weight:500;
+    margin-bottom:8px;
+    color:#ddd;
 }
 /* edu end*/
 
@@ -270,6 +286,7 @@ color:#aaa;
     .about-info{grid-template-columns:1fr;}
     #projects-container{justify-content:center;}
 }
+
 
 
 
