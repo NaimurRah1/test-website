@@ -230,7 +230,27 @@ ul{list-style:none;}
     margin-bottom:20px;
     color:var(--accent-color);
 }
+/* Research Experience */
+.research-summary{
+    background:#111;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:30px;
+    border-left:5px solid var(--accent-color);
+    box-shadow:0 10px 25px rgba(255,215,0,0.15);
+}
 
+.research-summary h3{
+    color:var(--accent-color);
+    margin-bottom:12px;
+    font-size:20px;
+}
+
+.research-summary p{
+    color:#ddd;
+    line-height:1.7;
+    font-size:15px;
+}
 /* Skills container (grid) */
 #skills-container{
     display:grid;
@@ -327,6 +347,7 @@ ul{list-style:none;}
     .about-info{grid-template-columns:1fr;}
     #projects-container{justify-content:center;}
 }
+
 
 
 
