@@ -73,19 +73,26 @@ ul{list-style:none;}
 #resume-section{padding:60px 20px;}
 .resume-wrap{background:#111;padding:25px;border-radius:10px;box-shadow:0 10px 25px rgba(255,255,0,0.1);margin-bottom:30px;}
 .resume-wrap h3{margin-bottom:20px;color:var(--accent-color);}
-.education{
-    padding:80px 10%;
+.edu-title{
+    text-align:center;
+    font-size:40px;
+    color:yellow;
+    margin-bottom:60px;
+    position:relative;
 }
 
-.section-title{
-    font-size:32px;
-    margin-bottom:30px;
-}
-
-.education-item{
-    margin-bottom:20px;
-    padding:20px;
-    border-left:4px solid yellow;
+/* reflection */
+.edu-title::after{
+    content:"Education";
+    position:absolute;
+    top:45px;
+    left:0;
+    right:0;
+    margin:auto;
+    color:yellow;
+    opacity:0.15;
+    transform:scaleY(-1);
+    filter:blur(3px);
 }
 #projects-container{display:flex;flex-wrap:wrap;gap:20px;}
 #projects-container .blog-entry{background:#111;border-radius:10px;overflow:hidden;transition:all 0.3s ease;width:300px;}
@@ -103,4 +110,5 @@ ul{list-style:none;}
     .about-info{grid-template-columns:1fr;}
     #projects-container{justify-content:center;}
 }
+
 
