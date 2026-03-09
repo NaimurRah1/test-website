@@ -41,7 +41,26 @@ fetch('profile.json')
         eduContainer.appendChild(div);
 
     });
+//---------------- certification----------------//
+    // Courses
+const courseContainer = document.getElementById("course-container");
 
+if(data.courses){
+    data.courses.forEach(course => {
+
+        const div = document.createElement("div");
+        div.className = "course-card";
+
+        div.innerHTML = `
+            <h4>${course.title}</h4>
+            <p>${course.institution}</p>
+            <a href="${course.certificate}" target="_blank">View Certificate</a>
+        `;
+
+        courseContainer.appendChild(div);
+
+    });
+}
 
     // ------------------- Projects -------------------
     let allProjects = data.projects;
@@ -156,3 +175,4 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('#projects-counter'));
 
 });
+
