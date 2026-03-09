@@ -82,12 +82,18 @@
     "image": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman-Portfolio-site./main/images/spss.jpg"
   },
     {
+  "title": "MSc in Statistics",
+  "institution": "Jagannath University",
+  "image": "images/msc.png"
+},
+    {
   "title": "BSc in Statistics",
   "institution": "Jagannath University",
   "image": "images/bsc.png"
 }
 ]
 }
+
 
 
 
