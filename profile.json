@@ -75,9 +75,15 @@
     "title":"Data Analytics with Excel, Power BI, SQL, Python",
     "institution":"Data Solution 360",
     "certificate":"certificates/data_analytics_certificate.pdf"
+  },
+     {
+    "title": "Statistical Data Analysis with Excel and SPSS",
+    "institution": "Instructory",
+    "image": "https://raw.githubusercontent.com/NaimurRah1/Naimur-Rahman-Portfolio-site/main/images/spss.jpg"
   }
 ]
 }
+
 
 
 
