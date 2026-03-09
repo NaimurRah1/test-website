@@ -365,6 +365,7 @@ ul{list-style:none;}
         rgba(255,255,255,0.1)
     );
     transform:skewX(-25deg);
+    pointer-events: none;
 }
 
 /* Hover shine animation */
@@ -551,6 +552,7 @@ ul{list-style:none;}
     gap: 20px;
     margin-top: 30px;
 }
+
 
 
 
