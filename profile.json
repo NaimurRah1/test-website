@@ -64,8 +64,21 @@
     "category": "Power BI",
     "link": "https://app.powerbi.com/links/i2U9XMnatG?ctid=d57df211-4f37-47c0-81ed-dd6296f7638c&pbi_source=linkShare&bookmarkGuid=172d148d-74f5-4992-8480-47eecba23523"
 }
-  ]
+  ],
+  "courses":[
+  {
+    "title":"Excel Data Analysis",
+    "institution":"Coursera",
+    "certificate":"certificates/excel_certificate.pdf"
+  },
+  {
+    "title":"Data Analytics with Excel, Power BI, SQL, Python",
+    "institution":"Data Solution 360",
+    "certificate":"certificates/data_analytics_certificate.pdf"
+  }
+]
 }
+
 
 
 
