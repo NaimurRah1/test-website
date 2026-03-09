@@ -46,6 +46,7 @@ fetch('profile.json')
 const courseContainer = document.getElementById("course-container");
 
 if (data.courses) {
+
   data.courses.forEach(course => {
 
     const div = document.createElement("div");
@@ -72,9 +73,10 @@ if (data.courses) {
     `;
 
     courseContainer.appendChild(div);
-  });
-}
 
+  });
+
+}
     // ------------------- Projects -------------------
     let allProjects = data.projects;
 
@@ -188,5 +190,6 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('#projects-counter'));
 
 });
+
 
 
